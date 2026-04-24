@@ -2,6 +2,10 @@
 
 A modern, responsive web application built with React and Material-UI that showcases a software development platform landing page. CodeEnv provides a seamless experience for developers to build software hassle-free with top-notch quality.
 
+## 🚀 Live Demo
+
+👉 [https://codeenv-platform.vercel.app/](https://codeenv-platform.vercel.app/)
+
 ## 🚀 Features
 
 - **Responsive Design**: Fully responsive layout that works seamlessly across desktop, tablet, and mobile devices
