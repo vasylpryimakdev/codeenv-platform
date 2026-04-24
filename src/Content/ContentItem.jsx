@@ -1,18 +1,8 @@
 import React from "react";
 
-import {
-  Box,
-  Typography,
-  useMediaQuery,
-  useTheme,
-  ImageList,
-  ImageListItem,
-} from "@mui/material";
+import { Box, Typography, ImageList, ImageListItem } from "@mui/material";
 
 const ContentItem = ({ title, description, img, swap }) => {
-  const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-
   return (
     <Box
       sx={{

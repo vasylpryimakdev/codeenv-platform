@@ -16,7 +16,7 @@ const DrawerComp = ({ links }) => {
       <Drawer open={open} onClose={() => setOpen(false)}>
         <List>
           {links.map((item, i) => (
-            <ListItemButton key={i}>
+            <ListItemButton key={i} onClick={() => setOpen(false)}>
               <ListItemText>{item}</ListItemText>
             </ListItemButton>
           ))}
