@@ -15,10 +15,20 @@ const ContentItem = ({ title, description, img, swap }) => {
       }}
     >
       <Box>
-        <Typography sx={{ color: "#734950", padding: 3 }} variant="h3">
+        <Typography
+          sx={{
+            color: "#734950",
+            padding: 3,
+            fontSize: { lg: 32, md: 28, sm: 24, xs: 20 },
+          }}
+          variant="h3"
+        >
           {title}
         </Typography>
-        <Typography sx={{ padding: 3 }} variant="caption">
+        <Typography
+          sx={{ padding: 3, fontSize: { lg: 24, md: 20, sm: 16, xs: 14 } }}
+          variant="caption"
+        >
           {description}
         </Typography>
       </Box>

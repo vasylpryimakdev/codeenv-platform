@@ -13,6 +13,8 @@ import {
   useTheme,
 } from "@mui/material";
 import ApiIcon from "@mui/icons-material/Api";
+import GoogleIcon from "@mui/icons-material/Google";
+import EmailIcon from "@mui/icons-material/Email";
 import DrawerComp from "./DrawerComp";
 
 const links = ["Products", "Solutions", "Pricing", "Enterprise"];
@@ -82,7 +84,13 @@ const Header = () => {
           playsInline
           src="/video.mp4"
         ></video>
-        <Box sx={{ display: "flex", width: "100%" }}>
+        <Box
+          sx={{
+            display: "flex",
+            width: "100%",
+            fontSize: { lg: 30, md: 24, sm: 18, xs: 14 },
+          }}
+        >
           <Typography
             variant="h4"
             sx={{
@@ -103,11 +111,16 @@ const Header = () => {
             marginTop: 5,
           }}
         >
-          <Button variant="outlined" sx={{ mr: 3 }}>
-            Signup With Email
+          <Button endIcon={<EmailIcon />} variant="outlined" sx={{ mr: 3 }}>
+            Signup
           </Button>
-          <Button sx={{ ml: 3 }} variant="contained">
-            Signup With Google
+          <Button
+            color="error"
+            endIcon={<GoogleIcon />}
+            sx={{ ml: 3 }}
+            variant="contained"
+          >
+            Signup
           </Button>
         </Box>
       </Box>
