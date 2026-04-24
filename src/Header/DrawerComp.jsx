@@ -13,7 +13,16 @@ const DrawerComp = ({ links }) => {
 
   return (
     <>
-      <Drawer open={open} onClose={() => setOpen(false)}>
+      <Drawer
+        open={open}
+        onClose={() => setOpen(false)}
+        sx={{
+          "& .MuiDrawer-paper": {
+            borderRadius: "0px 20px 20px 0",
+            width: { xs: "60%" },
+          },
+        }}
+      >
         <List>
           {links.map((item, i) => (
             <ListItemButton key={i} onClick={() => setOpen(false)}>

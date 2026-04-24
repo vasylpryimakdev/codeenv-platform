@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# CodeEnv Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive web application built with React and Material-UI that showcases a software development platform landing page. CodeEnv provides a seamless experience for developers to build software hassle-free with top-notch quality.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Responsive Design**: Fully responsive layout that works seamlessly across desktop, tablet, and mobile devices
+- **Modern UI**: Built with Material-UI components for a clean, professional interface
+- **Interactive Navigation**: Collapsible drawer for mobile devices with smooth transitions
+- **Hero Section**: Eye-catching video background with compelling call-to-action buttons
+- **Content Sections**: Dynamic content展示 with alternating layouts for better visual hierarchy
+- **Accessibility**: Semantic HTML5 structure with proper ARIA labels
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 19.2.5
+- **UI Framework**: Material-UI (MUI) 9.0.0
+- **Styling**: Emotion (styled components)
+- **Icons**: Material-UI Icons
+- **Build Tool**: Create React App
+- **Testing**: Jest, React Testing Library
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git https://github.com/vasylpryimakdev/codeenv-platform.git
+cd codeenv-platform
+```
 
-### `npm run build`
+2. Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+The application will be available at `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎯 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── components/
+│   ├── Header/
+│   │   ├── Header.jsx          # Main header component with navigation
+│   │   └── DrawerComp.jsx      # Mobile navigation drawer
+│   ├── Content/
+│   │   ├── Content.jsx         # Main content container
+│   │   └── ContentItem.jsx     # Individual content sections
+│   └── Footer/
+│       └── Footer.jsx          # Footer component
+├── App.js                      # Main application component
+├── index.js                    # Application entry point
+└── assets/                     # Static assets (images, videos)
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🎨 Key Components
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Header Component
 
-## Learn More
+- Sticky navigation bar with responsive design
+- Navigation tabs for Products, Solutions, Pricing, Enterprise
+- Call-to-action buttons: "Talk To Us" and "Try For Free"
+- Mobile-friendly drawer navigation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Hero Section
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Full-width video background
+- Compelling headline: "Build Your Software Hassle Free And Top Notch Quality"
+- Dual signup options: Email and Google authentication
 
-### Code Splitting
+### Content Sections
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Three main sections: "Get Things Done", "Productivity Is Brilliant", "Fast Development"
+- Alternating left-right layouts for visual variety
+- Responsive image and text positioning
 
-### Analyzing the Bundle Size
+## 🚀 Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- `npm start` - Run the app in development mode
+- `npm test` - Launch the test runner in interactive watch mode
+- `npm run build` - Build the app for production
+- `npm run eject` - Eject from Create React App (one-way operation)
 
-### Making a Progressive Web App
+## 📱 Responsive Breakpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The application uses Material-UI's responsive breakpoints:
 
-### Advanced Configuration
+- **xs**: 0px - 599px (mobile)
+- **sm**: 600px - 959px (tablet)
+- **md**: 960px - 1279px (small desktop)
+- **lg**: 1280px - 1919px (desktop)
+- **xl**: 1920px+ (large desktop)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🎯 Usage
 
-### Deployment
+This project serves as a template for modern web applications using React and Material-UI. It demonstrates best practices for:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Component-based architecture
+- Responsive design patterns
+- Material-UI implementation
+- Accessibility considerations
+- Performance optimization
