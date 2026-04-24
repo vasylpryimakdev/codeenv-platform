@@ -1,7 +1,40 @@
 import React from "react";
 
-const ContentItem = ({ title, description, img }) => {
-  return <div>ContentItem</div>;
+import { Box, Typography } from "@mui/material";
+
+const ContentItem = ({ title, description, img, swap }) => {
+  return (
+    <Box
+      sx={{
+        padding: 10,
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        flexDirection: swap ? "row-reverse" : "row",
+        bgcolor: swap && "#fff",
+      }}
+    >
+      <Box>
+        <Typography sx={{ color: "#734950", padding: 3 }} variant="h3">
+          {title}
+        </Typography>
+        <Typography sx={{ padding: 3 }} variant="caption">
+          {description}
+        </Typography>
+      </Box>
+      <img
+        src={img}
+        alt={title}
+        loading="lazy"
+        style={{
+          boxShadow: "10px 10px 20px #ccc",
+          borderRadius: 20,
+          height: "40%",
+          width: "40%",
+        }}
+      />
+    </Box>
+  );
 };
 
 export default ContentItem;
