@@ -23,10 +23,11 @@ const Header = () => {
             display: "flex",
             width: "100%",
             alignItems: "center",
+            justifyContent: "space-between",
           }}
         >
-          <ApiIcon sx={{ color: "black" }} />
-          <Box>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <ApiIcon sx={{ color: "black" }} />
             <Tabs component={Link} sx={{ textDecoration: "none" }}>
               {links.map((link, i) => {
                 return (
@@ -47,13 +48,9 @@ const Header = () => {
               })}
             </Tabs>
           </Box>
-          <Box sx={{ display: "flex", marginLeft: "auto" }}>
-            <Button sx={{ mr: 2 }} variant="outlined">
-              Talk To Us
-            </Button>
-            <Button sx={{ ml: 2 }} variant="contained">
-              Try For Free
-            </Button>
+          <Box sx={{ display: "flex", gap: 2 }}>
+            <Button variant="outlined">Talk To Us</Button>
+            <Button variant="contained">Try For Free</Button>
           </Box>
         </Box>
       </Toolbar>
